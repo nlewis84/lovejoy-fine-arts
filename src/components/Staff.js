@@ -10,6 +10,7 @@ export default function Staff() {
         `*[_type == "staff"]{
         name,
         slug,
+        position,
         image{
           asset->{
             _id,
@@ -23,11 +24,11 @@ export default function Staff() {
       .catch(console.error);
   }, []);
   return (
-    <main className="bg-green-100 min-h-screen p-12">
+    <main className="bg-gray-300 min-h-screen p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive">Staff Page</h1>
+        <h1 className="text-5xl flex justify-center cursive">Staff</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to the staff page
+          Meet the people who make it happen
         </h2>
         <div className="grid md:grid-cols-4 lg:grid-cols-5 gap-8">
           {staffData &&
@@ -38,7 +39,7 @@ export default function Staff() {
                   key={staff.slug.current}
                 >
                   <span
-                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
+                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-gray-300"
                     key={index}
                   >
                     <img
@@ -47,8 +48,8 @@ export default function Staff() {
                       className="w-full h-full rounded-r object-cover object-top absolute"
                     />
                     <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
-                      <h3 className="text-gray-800 text-lg font-bold px-3 py-4 bg-red-700 text-red-100 bg-opacity-75">
-                        {staff.title}
+                      <h3 className="text-gray-800 text-xs font-bold px-3 py-4 bg-red-700 text-red-100 bg-opacity-75">
+                        {staff.position}
                       </h3>
                     </span>
                   </span>

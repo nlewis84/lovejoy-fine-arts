@@ -20,6 +20,12 @@ export default {
       validation: (Rule) => [Rule.required().error('Please generate a slug')],
     },
     {
+      name: 'position',
+      title: 'Position',
+      type: 'string',
+      validation: (Rule) => [Rule.required().error('A position is required')],
+    },
+    {
       name: 'image',
       title: 'Image',
       type: 'image',
