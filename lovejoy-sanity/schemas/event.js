@@ -1,6 +1,6 @@
 export default {
-  name: 'post',
-  title: 'Post',
+  name: 'event',
+  title: 'Event',
   type: 'document',
   fields: [
     {
@@ -18,14 +18,8 @@ export default {
       },
     },
     {
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: {type: 'author'},
-    },
-    {
       name: 'mainImage',
-      title: 'Main image',
+      title: 'Main Image',
       type: 'image',
       options: {
         hotspot: true,
@@ -35,16 +29,16 @@ export default {
       name: 'categories',
       title: 'Categories',
       type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
+      of: [{ type: 'reference', to: { type: 'category' } }],
     },
     {
-      name: 'publishedAt',
-      title: 'Published at',
+      name: 'eventDate',
+      title: 'Event Date',
       type: 'datetime',
     },
     {
-      name: 'body',
-      title: 'Body',
+      name: 'description',
+      title: 'Description',
       type: 'blockContent',
     },
   ],
@@ -52,14 +46,7 @@ export default {
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
       media: 'mainImage',
     },
-    prepare(selection) {
-      const {author} = selection
-      return Object.assign({}, selection, {
-        subtitle: author && `by ${author}`,
-      })
-    },
   },
-}
+};
