@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/lovejoy-sanity/node_modules
 
 # testing
 /coverage
