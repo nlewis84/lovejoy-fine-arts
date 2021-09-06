@@ -20,6 +20,11 @@ export default {
       validation: (Rule) => [Rule.required().error('Please generate a slug')],
     },
     {
+      name: 'sort',
+      title: 'Sort',
+      type: 'number',
+    },
+    {
       name: 'position',
       title: 'Position',
       type: 'string',
