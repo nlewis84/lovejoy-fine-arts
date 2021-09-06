@@ -49,9 +49,9 @@ export default function SingleStaff() {
 
   console.log(singleStaff);
   return (
-    <main className="bg-gray-300 p-12 flex-grow">
+    <main className="bg-gray-300 p-4 flex-grow">
       <article className="container shadow-lg mx-auto bg-white rounded-lg">
-        <header className="relative">
+        <header className="relative pb-4">
           <div className="absolute w-full flex justify-center p-4">
             <div className="p-4">
               <h1 className="cursive text-center text-3xl lg:text-6xl">
@@ -65,11 +65,16 @@ export default function SingleStaff() {
             className="w-full h-4 flex object-cover object-top rounded-t"
           />
         </header>
-        <div className="p-20 mt-4">
+        <div className="p-4 pt-16 mt-4">
           <div className="block border-l-8 border-red-700 rounded m-auto max-w-xs justify-center text-gray-800">
             <img src={urlFor(singleStaff.image).url()} alt={singleStaff.name} />
           </div>
-          <div className="px-4 lg:px-12 py-6 lg:py-12 prose text-2xl leading-relaxed lg:prose-xl max-w-full">
+          <div className="px-4 lg:px-12 py-4 lg:pb-12 prose text-md lg:text-xl leading-relaxed lg:prose-xl max-w-full">
+            <span className="h-full flex justify-center items-end pr-4 pb-4">
+              <h3 className="text-white text-lg font-bold px-6 py-3 bg-red-700 rounded-full">
+                {singleStaff.category.title}
+              </h3>
+            </span>
             <BlockContent
               blocks={singleStaff.bio}
               projectId="tqrida4n"
