@@ -20,13 +20,6 @@ export default function Footer() {
             fgColor="#ffffff"
             style={{ height: 35, width: 35 }}
           />
-          <SocialIcon
-            url=""
-            className="mr-4"
-            target="_blank"
-            fgColor="#ffffff"
-            style={{ height: 35, width: 35 }}
-          />
         </div>
       </div>
     </footer>
