@@ -44,6 +44,11 @@ export default {
       validation: (Rule) => [Rule.required().error('A date is required')],
     },
     {
+      name: 'location',
+      title: 'Location',
+      type: 'string',
+    },
+    {
       name: 'description',
       title: 'Description',
       type: 'blockContent',

@@ -8,22 +8,23 @@ export default function Staff() {
     sanityClient
       .fetch(
         `*[_type == "staff"]{
-        name,
-        slug,
-        position,
-        id,
-        "category": categories[0]->{
-          title,
-          sort
-        },
-        image{
-          asset->{
-            _id,
-            url
+          name,
+          slug,
+          position,
+          id,
+          sort,
+          "category": categories[0]->{
+            title,
+            sort
           },
-          alt
-        }
-      } | order(category.sort asc, slug.current asc)`
+          image{
+            asset->{
+              _id,
+              url
+            },
+            alt
+          }
+        } | order(category.sort asc, sort asc)`
       )
       .then((data) => setStaff(data))
       .catch(console.error);
@@ -44,7 +45,7 @@ export default function Staff() {
                   key={staff.slug.current}
                 >
                   <span
-                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-red-700 transform hover:scale-105 hover:shadow-lg transition ease-linear duration-200"
+                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-red-700 transform hover:scale-105 hover:shadow-lg hover:border-white transition ease-linear duration-200"
                     key={index}
                   >
                     <img
