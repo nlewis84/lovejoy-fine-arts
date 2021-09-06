@@ -26,6 +26,15 @@ export default {
       validation: (Rule) => [Rule.required().error('A position is required')],
     },
     {
+      name: 'categories',
+      title: 'Categories',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'category' } }],
+      validation: (Rule) => [
+        Rule.required().error('Associate this staff member with a category'),
+      ],
+    },
+    {
       name: 'image',
       title: 'Image',
       type: 'image',
