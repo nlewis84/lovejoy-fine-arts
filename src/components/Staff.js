@@ -44,7 +44,7 @@ export default function Staff() {
                   key={staff.slug.current}
                 >
                   <span
-                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-red-700 transform hover:scale-105 transition ease-linear duration-200"
+                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-red-700 transform hover:scale-105 hover:shadow-lg transition ease-linear duration-200"
                     key={index}
                   >
                     <img
@@ -52,7 +52,7 @@ export default function Staff() {
                       alt={staff.image.alt}
                       className="w-full h-full rounded-r object-cover object-top absolute"
                     />
-                    <span className="block relative h-full flex justify-end items-end pr-4 pb-4 hover:bg-opacity-30 hover:bg-black transition ease-linear duration-200">
+                    <span className="block relative h-full flex justify-end items-end pr-4 pb-4 hover:bg-opacity-20 hover:bg-black transition ease-linear duration-200">
                       <h3 className="text-gray-800 text-xs text-right font-bold px-3 py-4 bg-red-700 rounded-lg text-red-100 bg-opacity-75 hover:bg-opacity-100 transition ease-linear duration-200">
                         {staff.name}
                         <br />
