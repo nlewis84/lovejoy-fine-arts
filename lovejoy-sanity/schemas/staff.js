@@ -51,15 +51,7 @@ export default {
     {
       name: 'bio',
       title: 'Bio',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          styles: [{ title: 'Normal', value: 'normal' }],
-          lists: [],
-        },
-      ],
+      type: 'blockContent',
       validation: (Rule) => [Rule.required().error('A biography is required')],
     },
   ],

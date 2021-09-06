@@ -36,7 +36,7 @@ export default function Staff() {
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Meet the people who make it happen
         </h2>
-        <div className="grid md:grid-cols-4 lg:grid-cols-5 gap-8">
+        <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {staffData &&
             staffData.map((staff, index) => (
               <article>
@@ -51,7 +51,7 @@ export default function Staff() {
                     <img
                       src={staff.image.asset.url}
                       alt={staff.image.alt}
-                      className="w-full h-full rounded-r object-cover object-top absolute"
+                      className="w-full h-full rounded-r object-cover xs:object-center md:object-top absolute"
                     />
                     <span className="block relative h-full flex justify-end items-end pr-4 pb-4 hover:bg-opacity-20 hover:bg-black transition ease-linear duration-200">
                       <h3 className="text-gray-800 text-xs text-right font-bold px-3 py-4 bg-red-700 rounded-lg text-red-100 bg-opacity-75 hover:bg-opacity-100 transition ease-linear duration-200">
