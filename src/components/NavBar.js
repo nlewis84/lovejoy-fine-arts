@@ -10,28 +10,28 @@ export default function NavBar() {
             to="/"
             exact
             activeClassName="text-white"
-            className="inline-flex items-center py-6 px-3 mr-4 text-white hover:text-red-600 text-4xl font-bold cursive tracking-widest"
+            className="inline-flex items-center py-6 px-3 md:mr-4 text-white hover:text-red-600 text-xs md:text-4xl font-bold cursive tracking-widest"
           >
             Lovejoy Fine Arts
           </NavLink>
           <NavLink
             to="/event"
             activeClassName="text-white bg-red-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-white fire hover:text-red-600"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-xs sm:text-base text-white fire hover:text-red-600"
           >
             Events
           </NavLink>
           <NavLink
             to="/staff"
             activeClassName="text-white bg-red-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-white fire hover:text-red-600"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-xs sm:text-base text-white fire hover:text-red-600"
           >
             Staff
           </NavLink>
           <NavLink
             to="/about"
             activeClassName="text-white bg-red-700"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-white fire hover:text-red-600"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-xs sm:text-base text-white fire hover:text-red-600"
           >
             About
           </NavLink>

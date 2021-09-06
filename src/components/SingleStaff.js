@@ -47,7 +47,6 @@ export default function SingleStaff() {
       </main>
     );
 
-  console.log(singleStaff);
   return (
     <main className="bg-gray-300 p-4 flex-grow">
       <article className="container shadow-lg mx-auto bg-white rounded-lg">
@@ -67,7 +66,11 @@ export default function SingleStaff() {
         </header>
         <div className="p-4 pt-16 mt-4">
           <div className="block border-l-8 border-red-700 rounded m-auto max-w-xs justify-center text-gray-800">
-            <img src={urlFor(singleStaff.image).url()} alt={singleStaff.name} />
+            <img
+              src={urlFor(singleStaff.image).url()}
+              alt={singleStaff.name}
+              className="rounded-r"
+            />
           </div>
           <div className="px-4 lg:px-12 py-4 lg:pb-12 prose text-md lg:text-xl leading-relaxed lg:prose-xl max-w-full">
             <span className="h-full flex justify-center items-end pr-4 pb-4">
