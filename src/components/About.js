@@ -38,10 +38,12 @@ export default function About() {
         alt="Red theater stage curtain closed."
         className="absolute object-cover object-bottom w-full h-full"
       />
-      <div className="p-10 lg:pb-52 container mx-auto relative">
-        <section className="bg-white rounded-lg shadow-2xl lg:flex p-20">
+      <div className="p-4 md:p-10 lg:pb-52 container mx-auto relative">
+        <section className="bg-white rounded-lg shadow-2xl lg:flex p-10 lg:p-20">
           <div className="text-lg flex flex-col justify-center">
-            <h1 className="cursive text-6xl text-black mb-4">About</h1>
+            <h1 className="cursive text-6xl text-center text-black mb-4">
+              About
+            </h1>
             <div className="prose lg:prose-xl text-black">
               <BlockContent
                 blocks={about.description}

@@ -74,7 +74,7 @@ export default function SingleStaff() {
           </div>
           <div className="px-4 lg:px-12 py-4 lg:pb-12 prose text-md lg:text-xl leading-relaxed lg:prose-xl max-w-full">
             <span className="h-full flex justify-center items-end pr-4 pb-4">
-              <h3 className="text-white text-lg font-bold px-6 py-3 bg-red-700 rounded-full">
+              <h3 className="text-white text-xs font-bold px-4 py-2 bg-red-700 rounded-full">
                 {singleStaff.category.title}
               </h3>
             </span>

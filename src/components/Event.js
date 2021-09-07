@@ -35,7 +35,7 @@ export default function Event() {
     <main className="bg-gray-300 p-12 flex-grow">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">Events</h1>
-        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
+        <h2 className="text-lg text-gray-600 flex text-center justify-center mb-12">
           Check out the next amazing showcase of talent
         </h2>
         <section className="grid grid-cols-1 gap-8">
