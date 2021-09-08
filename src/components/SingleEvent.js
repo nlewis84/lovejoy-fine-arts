@@ -48,8 +48,8 @@ export default function SingleEvent() {
 
   console.log(singleEvent);
   return (
-    <main className="bg-gray-300 p-4 flex-grow">
-      <article className="container shadow-lg mx-auto bg-white rounded-lg">
+    <main className="bg-gray-300 md:p-4 flex-grow">
+      <article className="container shadow-lg mx-auto bg-white md:rounded-lg">
         <header className="relative pb-4">
           <div className="absolute w-full flex justify-center p-4">
             <div className="p-4">
@@ -61,11 +61,11 @@ export default function SingleEvent() {
           <img
             src={urlFor(singleEvent.mainImage).blur(100).url()}
             alt={singleEvent.title}
-            className="w-full h-4 flex object-cover object-top rounded-t"
+            className="w-full h-0 md:h-4 flex object-cover object-top md:rounded-t"
           />
         </header>
         <div className="p-4 pt-16 mt-4">
-          <div className="block border-l-8 border-red-700 rounded m-auto max-w-xs justify-center text-gray-800">
+          <div className="block border-l-8 border-red-700 rounded m-auto min-w-sm max-w-2xl justify-center text-gray-800">
             <img
               src={urlFor(singleEvent.mainImage).url()}
               alt={singleEvent.title}

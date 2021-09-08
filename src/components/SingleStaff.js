@@ -48,8 +48,8 @@ export default function SingleStaff() {
     );
 
   return (
-    <main className="bg-gray-300 p-4 flex-grow">
-      <article className="container shadow-lg mx-auto bg-white rounded-lg">
+    <main className="bg-gray-300 md:p-4 flex-grow">
+      <article className="container shadow-lg mx-auto bg-white md:rounded-lg">
         <header className="relative pb-4">
           <div className="absolute w-full flex justify-center p-4">
             <div className="p-4">
@@ -61,19 +61,19 @@ export default function SingleStaff() {
           <img
             src={urlFor(singleStaff.image).blur(100).url()}
             alt={singleStaff.name}
-            className="w-full h-4 flex object-cover object-top rounded-t"
+            className="w-full h-0 md:h-4 flex object-cover object-top md:rounded-t"
           />
         </header>
         <div className="p-4 pt-16 mt-4">
-          <div className="block border-l-8 border-red-700 rounded m-auto max-w-xs justify-center text-gray-800">
+          <div className="block flex justify-center h-96">
             <img
               src={urlFor(singleStaff.image).url()}
               alt={singleStaff.name}
-              className="rounded-r"
+              className="rounded-2xl h-full"
             />
           </div>
           <div className="px-4 lg:px-12 py-4 lg:pb-12 prose text-md lg:text-xl leading-relaxed lg:prose-xl max-w-full">
-            <span className="h-full flex justify-center items-end pr-4 pb-4">
+            <span className="h-full flex justify-center items-end pb-4">
               <h3 className="text-white text-xs font-bold px-4 py-2 bg-red-700 rounded-full">
                 {singleStaff.category.title}
               </h3>
